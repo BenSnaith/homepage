@@ -20,7 +20,7 @@ export default function ProfilePicture() {
             alt="an image of me"
             width={(width < 1024) ? "200" : "300"}
             height={(width < 1024) ? "200" : "300"}
-            className="rounded-3xl"
+            className="rounded-3xl mr-0"
         />
     );
 };

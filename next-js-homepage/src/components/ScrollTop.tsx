@@ -36,6 +36,7 @@ export default function ScrollTop() {
     console.log(isVisible);
 
     return(
-        <button className={clsx("fixed bottom-28 right-14", {'hidden' : isVisible === false})} onClick={() => toTop()}> <BsArrowUp /> </button>
+        <button className={clsx("flex items-center justify-center fixed bottom-28 w-10 h-10 rounded-full bg-zinc-950 drop-shadow-md", 
+        {'hidden' : isVisible === false})} onClick={() => toTop()}> <BsArrowUp /> </button>
     );
 }

@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
     <div id="entire-site-div">
-      <div id="top-card-div" className="flex flex-row justify-evenly items-center min-h-fit px-32 py-48">
+      <div id="top-card-div" className="flex flex-row justify-evenly items-center min-h-fit px-10 py-48">
         <div className="w-fit">
-          <p className="lg:text-5xl md:text-4xl sm:text-3xl">I'm <Link href={""} className="hover:text-green-600 transition-all ease-in-out">Ben Snaith.</Link></p>
+          <p className="lg:text-5xl md:text-4xl sm:text-3xl">I'm <Link href={""} className="hover:text-green-600 transition-colors duration-300">Ben Snaith.</Link></p>
           <p className="lg:text-5xl md:text-4xl sm:text-3xl mt-2">Computer Science.</p>
           <p className="lg:text-5xl md:text-4xl sm:text-3xl mt-2">2nd Year Student.</p>
           <p className="lg:text-5xl md:text-4xl sm:text-3xl mt-2">Birmingham, UK.</p>
@@ -18,13 +18,27 @@ export default function Home() {
           <ProfilePicture/>
         </div>
       </div>
+
+      <div id="mid-card-div" className="flex flex-row justify-center  min-h-fit px-32">
+        <h1 className="lg:text-5xl md:text-4xl sm:text-3xl">About me</h1>
+        <p>
+        I am a Computer Science Student from the UK<br/>
+        Lorem ipsum dolor sit amet consectetur<br/>
+        Lorem ipsum dolor sit amet consectetur<br/>
+        Lorem ipsum dolor sit amet consectetur<br/>
+        Lorem ipsum dolor sit amet consectetur<br/>
+        Lorem ipsum dolor sit amet consectetur<br/>
+        Lorem ipsum dolor sit amet consectetur<br/>
+        </p>
+      </div>
+
       <div id="hr-div-one" className="flex flex-row items-center justify-center">
         <hr className="px-32 min-w-96"/>
       </div>
       <div id="skills-section" className="flex flex-col justify-center items-center">
         <h1 className="text-4xl my-16">Skills</h1>
         <ScrollTop />
-        <div id="skills-grid" className="grid grid-cols-3 gap-x-48 gap-y-20 text-2xl text-center mb-12">
+        <div id="skills-grid" className="grid grid-cols-3 gap-x-48 gap-y-20 text-2xl text-center mb-28">
           <p>Next.JS</p>
           <p>Java</p>
           <p>C/C++</p>
@@ -32,6 +46,9 @@ export default function Home() {
           <p>HTML/CSS</p>
           <p>Docker</p>
         </div>
+      </div>
+      <div id="hr-div-one" className="flex flex-row items-center justify-center">
+        <hr className="px-32 min-w-96"/>
       </div>
     </div>
     </>
