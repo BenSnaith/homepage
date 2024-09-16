@@ -1,56 +1,69 @@
 import Link from "next/link";
-import Image from "next/image";
 import ProfilePicture from "@/components/ProfilePicture";
-import ScrollTop from "@/components/ScrollTop";
+import { NavigationButtons } from "@/components/Navigation";
 
 export default function Home() {
   return (
     <>
-    <div id="entire-site-div">
-      <div id="top-card-div" className="flex flex-row justify-evenly items-center min-h-fit px-10 py-48">
-        <div className="w-fit">
-          <p className="lg:text-5xl md:text-4xl sm:text-3xl">I'm <Link href={""} className="hover:text-green-600 transition-colors duration-300">Ben Snaith.</Link></p>
-          <p className="lg:text-5xl md:text-4xl sm:text-3xl mt-2">Computer Science.</p>
-          <p className="lg:text-5xl md:text-4xl sm:text-3xl mt-2">2nd Year Student.</p>
-          <p className="lg:text-5xl md:text-4xl sm:text-3xl mt-2">Birmingham, UK.</p>
+      <div id="entire-site-div" className="relative">
+        <div id="top-card-div" className="flex flex-row justify-evenly items-center min-h-[90vh] px-10 py-48">
+          <div className="w-fit">
+            <p className="lg:text-5xl md:text-4xl sm:text-3xl">I'm <Link href={""} className="hover:text-green-600 transition-colors duration-300">Ben Snaith.</Link></p>
+            <p className="lg:text-5xl md:text-4xl sm:text-3xl mt-2">Computer Science.</p>
+            <p className="lg:text-5xl md:text-4xl sm:text-3xl mt-2">2nd Year Student.</p>
+            <p className="lg:text-5xl md:text-4xl sm:text-3xl mt-2">Birmingham, UK.</p>
+          </div>
+          <div className="w-fit">
+            <ProfilePicture/>
+          </div>
         </div>
-        <div className="w-fit">
-          <ProfilePicture/>
-        </div>
-      </div>
 
-      <div id="mid-card-div" className="flex flex-row justify-center  min-h-fit px-32">
-        <h1 className="lg:text-5xl md:text-4xl sm:text-3xl">About me</h1>
-        <p>
-        I am a Computer Science Student from the UK<br/>
-        Lorem ipsum dolor sit amet consectetur<br/>
-        Lorem ipsum dolor sit amet consectetur<br/>
-        Lorem ipsum dolor sit amet consectetur<br/>
-        Lorem ipsum dolor sit amet consectetur<br/>
-        Lorem ipsum dolor sit amet consectetur<br/>
-        Lorem ipsum dolor sit amet consectetur<br/>
-        </p>
-      </div>
-
-      <div id="hr-div-one" className="flex flex-row items-center justify-center">
-        <hr className="px-32 min-w-96"/>
-      </div>
-      <div id="skills-section" className="flex flex-col justify-center items-center">
-        <h1 className="text-4xl my-16">Skills</h1>
-        <ScrollTop />
-        <div id="skills-grid" className="grid grid-cols-3 gap-x-48 gap-y-20 text-2xl text-center mb-28">
-          <p>Next.JS</p>
-          <p>Java</p>
-          <p>C/C++</p>
-          <p>SQL/RDB</p>
-          <p>HTML/CSS</p>
-          <p>Docker</p>
+        <div id="mid-card-div" className="flex flex-col justify-evenly items-center min-h-screen px-10 py-32 text-xl text-center">
+          <div id="hr-div-one" className="flex flex-row items-center justify-center">
+            <hr className="px-32 min-w-96"/>
+          </div>
+          <div className="w-fit" id="about">
+            <p>
+            I'm Ben Snaith, I am a Second Year<br/>
+            Computer Science student from Birmingham, UK.<br/>
+            <br/>
+            This site is created with the intention<br/>
+            of displaying my projects while also serving<br/>
+            as a project in itself to sharpen my Full-Stack<br/>
+            and UI/UX skills.<br/>
+            <br/>
+            Please have a look around :)
+            </p>
+          </div>
+          <div id="hr-div-one" className="flex flex-row items-center justify-center">
+            <hr className="px-32 min-w-96"/>
+          </div>
         </div>
+
+        <div id="mid-card-div" className="flex flex-col justify-evenly items-center min-h-screen px-10 py-32 text-xl text-center">
+          <div id="hr-div-one" className="flex flex-row items-center justify-center">
+            <hr className="px-32 min-w-96"/>
+          </div>
+          <div className="w-fit" id="about">
+            <p>
+            I'm Ben Snaith, I am a Second Year<br/>
+            Computer Science student from Birmingham, UK.<br/>
+            <br/>
+            This site is created with the intention<br/>
+            of displaying my projects while also serving<br/>
+            as a project in itself to sharpen my Full-Stack<br/>
+            and UI/UX skills.<br/>
+            <br/>
+            Please have a look around :)
+            </p>
+          </div>
+          <div id="hr-div-one" className="flex flex-row items-center justify-center">
+            <hr className="px-32 min-w-96"/>
+          </div>
+        </div>
+
+        <NavigationButtons/>
       </div>
-      <div id="hr-div-one" className="flex flex-row items-center justify-center">
-        <hr className="px-32 min-w-96"/>
-      </div>
-    </div>
     </>
   );
 }
