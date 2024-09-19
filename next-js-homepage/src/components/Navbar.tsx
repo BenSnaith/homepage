@@ -16,7 +16,7 @@ export default function Navbar() {
                 <Link className={clsx("text-slate-700 hover:text-white hover:drop-shadow-glow transition-all", { 'text-white': pathname === "/projects"})} href="/projects">projects.</Link>
             </div>
             <div className="mx-1.5 mr-10">
-                <Link className={clsx("text-slate-700 hover:text-white hover:drop-shadow-glow transition-all", { 'text-white': pathname === "/contact"})} href="/contact">contact.</Link>
+                <button className={clsx("text-slate-700 hover:text-white hover:drop-shadow-glow transition-all", { 'text-white': pathname === "/contact"})} >contact.</button>
             </div>
         </div>
     );

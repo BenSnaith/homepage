@@ -32,11 +32,11 @@ export default function ScrollTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     console.log(isVisible);
 
     return(
-        <button className={clsx("flex items-center justify-center w-14 h-14 rounded-full bg-zinc-900 drop-shadow-md box-border", 
+        <button className={clsx("flex items-center justify-center w-14 h-14 rounded-full bg-zinc-950 drop-shadow-md fixed bottom-[14vh] right-[5vh] hover:bg-zinc-800", 
         {'hidden' : isVisible === false})} onClick={() => toTop()}> <BsArrowUp /> </button>
     );
 }

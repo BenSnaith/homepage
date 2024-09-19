@@ -9,7 +9,8 @@ export default function Footer() {
     return(
         <>
         <div className="flex flex-row items-center justify-center h-20 bg-zinc-950 mx-5 mb-5 rounded-lg">
-            <div className="flex flex-row text-5xl mt-5 text-zinc-200">
+            <div className="flex flex-row justify-between">
+                <p>Ben Snaith 2024</p>
             </div>
         </div>
         </>
