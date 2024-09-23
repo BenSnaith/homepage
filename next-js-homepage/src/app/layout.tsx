@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "../components/Navbar";
+import { Navbar } from "../components/ui/nav-implementation";
 import Footer from "../components/Footer";
 import { Roboto } from 'next/font/google';
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={roboto.className}>
-        <Navbar />
+        <Navbar className="top-5"/>
         {children}
         <Footer />
       </body>

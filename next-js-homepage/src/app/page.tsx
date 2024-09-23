@@ -8,7 +8,7 @@ import Carousel from "@/components/Carousel";
 export default function Home() {
   return (
       <div id="entire-site-div" className="relative">
-        <div id="top-card-div" className="flex flex-row justify-evenly items-center min-h-[90vh] px-10 py-48">
+        <div id="top-card-div" className="flex flex-row justify-evenly items-center min-h-screen px-10 py-48">
           <div className="w-fit">
             <p className="lg:text-5xl md:text-4xl sm:text-3xl">I'm <Link href={""} className="hover:text-green-600 transition-colors duration-300">Ben Snaith.</Link></p>
             <p className="lg:text-5xl md:text-4xl sm:text-3xl mt-2">Computer Science.</p>
@@ -20,7 +20,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="mid-card-div" className="flex flex-col justify-evenly items-center min-h-screen px-10 py-32 text-xl text-center">
+        <div id="about-me" className="flex flex-col justify-evenly items-center min-h-screen px-10 py-32 text-xl text-center">
 
           <div id="hr-div-one" className="flex flex-row items-center justify-center">
             <hr className="px-32 min-w-96"/>
