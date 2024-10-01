@@ -1,6 +1,7 @@
 'use client';
 import { useState } from "react";
 import { HoveredLink, Menu, MenuItem, LinkedMenuItem, ProjectItem } from "./navbar-elements";
+import siteImage from "../../../public/static/homepage-site.png";
 import { cn } from "@/lib/utlis"
 
 export function Navbar({ className }: { className?: string}) {
@@ -10,9 +11,11 @@ export function Navbar({ className }: { className?: string}) {
             className={cn("fixed top-10 inset-x-0 max-w-[70vw] mx-auto z-50", className)}
         >
             <Menu setActive={setActive}>
-                <LinkedMenuItem href={"/"} setActive={setActive} active={active} item="home.">
+                <LinkedMenuItem href={"#home"} setActive={setActive} active={active} item="home.">
                     <div className="flex flex-col space-y-4 text-sm">
                         <HoveredLink href="#about-me">about me.</HoveredLink>
+                        <HoveredLink href="#skills">skills.</HoveredLink>
+                        <HoveredLink href="#cv">cv.</HoveredLink>
                     </div>
                 </LinkedMenuItem>
                 <div className="flex-1"></div>
@@ -21,7 +24,7 @@ export function Navbar({ className }: { className?: string}) {
                         <ProjectItem
                             title="Portfolio"
                             href="https://github.com/BenSnaith/homepage"
-                            src="https://dummyjson.com/image/140x70"
+                            src={siteImage}
                             description="This website, my personal portfolio."
                         />
                         <ProjectItem

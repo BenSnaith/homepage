@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utlis";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 const transition = {
     type: "spring",
@@ -144,7 +144,7 @@ export const ProjectItem = ({
     title: string,
     description: string,
     href: string,
-    src: string,
+    src: string | StaticImageData, // Enables the use of local images.
 }) => {
     return(
     <Link href={href} className="flex space-x-2">
